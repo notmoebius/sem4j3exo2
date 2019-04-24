@@ -59,4 +59,12 @@ titres = Track.where(artist: 'AC/DC') puis titres.each { |t| puts t.title}
 ```Track.where(artist: 'Deep Purple').sum('price') donne $90.09 ```
 
 * Modifie (via une boucle) tous les titres de "Eric Clapton" afin qu'ils soient affichés avec "Britney Spears" en artist.
+--> Vous êtes sûr de remplacer Clapton par Spears....??? Hein ?? No way
+
+Bon, parce que c'est vous:
+
+```k = Track.where(artist: 'Eric Clapton')
+    k.each { |l| k.update(artist: "Britney Spears")}``` 
+    
+Made by Love from Toulouse
 
