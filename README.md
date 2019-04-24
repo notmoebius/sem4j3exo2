@@ -51,11 +51,12 @@ titres = Track.where(artist: 'AC/DC') puis titres.each { |t| puts t.title}
 ```titi = Track.where(album: 'Let There Be Rock') puis titi.each { |k| puts k.title}```
     
 * Calcule le prix total de cet album ainsi que sa durée totale.
+
     ```titi.sum('price') donne $7.92``` 
 
 * Calcule le coût de l'intégralité de la discographie de "Deep Purple".
     
 ```Track.where(artist: 'Deep Purple').sum('price') donne $90.09 ```
 
-* Modifie (via une boucle) tous les titres de "Iron Maiden" afin qu'ils soient affichés avec "Britney Spears" en artist.
+* Modifie (via une boucle) tous les titres de "Eric Clapton" afin qu'ils soient affichés avec "Britney Spears" en artist.
 
