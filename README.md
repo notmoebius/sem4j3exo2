@@ -1,4 +1,5 @@
-# README
+# Projet THP semaine 4 / jour 3
+Fait par Brice Jones @Brice
 
 ## Niveau facile
 
