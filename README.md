@@ -64,8 +64,10 @@ titres = Track.where(artist: 'AC/DC') puis titres.each { |t| puts t.title}
 
 Bon, parce que c'est vous:
 
-```k = Track.where(artist: 'Eric Clapton')
-    k.each { |l| k.update(artist: "Britney Spears")}``` 
+```
+k = Track.where(artist: 'Eric Clapton')
+    k.each { |l| k.update(artist: "Britney Spears")}
+```
     
 Made by Love from Toulouse
 
