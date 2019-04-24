@@ -21,10 +21,16 @@
 ## Niveau Moyen
 
 * Combien y a t'il d'albums dont le titre contient "Great" ? (indice)
-    
+
+```13 albums```
+
 * Supprime tous les albums dont le nom contient "music".
-    
+
+    ```Création d'un array d'objet Album puis destroy avec t.each { |l| p l.destroy}```
+
 * Combien y a t'il d'albums écrits par AC/DC ?
+    
+    ```a = Album.where(artist: 'AC/DC') puis a.count```
     
 * Combien de chanson durent exactement 158589 millisecondes ?
 
