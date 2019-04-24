@@ -30,17 +30,22 @@
 
 * Combien y a t'il d'albums écrits par AC/DC ?
     
-    ```a = Album.where(artist: 'AC/DC') puis a.count```
-    
-* Combien de chanson durent exactement 158589 millisecondes ?
+    ```a = Album.where(artist: 'AC/DC') puis a.count = 2```
 
+* Combien de chanson durent exactement 158589 millisecondes ?
+```0```
 
 ## Niveau Difficile
 
 Pour ces questions, tu vas devoir effectuer des boucles dans la console Rails. C'est peu commun mais c'est faisable, tout comme dans IRB.
 * puts en console tous les titres de AC/DC.
 
+```titres = Track.where(artist: 'AC/DC') puis
+titres.each { |t| puts t.title}```
+
 * puts en console tous les titres de l'album "Let There Be Rock".
+
+```titi = Track.where(album: 'Let There Be Rock') puis titi.each { |k| puts k.title}```
     
 * Calcule le prix total de cet album ainsi que sa durée totale.
     
